@@ -12,6 +12,8 @@ scores = [90, 85, 88]
 
 
 person = {
+
+    
     "name": "Alice",
     "age": 25
 }
