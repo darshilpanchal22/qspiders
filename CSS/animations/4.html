@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 400px;
+            width: 400px;
+            border: 2px solid black;
+            margin: 50px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            animation: stoc 3s linear infinite, clr 3s linear infinite;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+
+        @keyframes stoc {
+            0% {
+                border-radius: 10%;
+            }
+
+            25% {
+                border-radius: 20%;
+            }
+
+            50% {
+                border-radius: 30%;
+            }
+
+            75% {
+                border-radius: 40%;
+            }
+
+            100% {
+                border-radius: 50%;
+            }
+        }
+
+        @keyframes clr {
+            0% {
+                background-color: aqua;
+            }
+
+            25% {
+                background-color: blue;
+            }
+
+            50% {
+                background-color: peru;
+            }
+
+            75% {
+                background-color: blueviolet;
+            }
+
+            100% {
+                background-color: brown;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, nisi!</div>
+</body>
+
+</html>

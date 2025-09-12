@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image-container{
+            width: 100%;
+            height: 95px;
+            background-image: url(https://cdn.pixabay.com/photo/2017/07/08/06/48/sa-rapita-2483668_1280.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #head{
+            text-align: center;
+        }
+        .header{
+            margin-bottom: 9px;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            background-image: linear-gradient(90deg,rgba(0, 240, 0, 1) 21%, rgba(0, 38, 240, 1) 76%);
+        }
+        .header-para{
+            font-size: 20px;
+            font-weight: 390;
+            margin-top: 9px;
+            color: gray;
+        }
+        #sect{
+            height: 450px;
+            padding: 5px 5px;
+            width: 100%;
+        }
+        .box{
+            margin: 15px;
+            display: inline-block;
+            width: 300px;
+            height: 200px;
+            border-radius: 5px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .img1{
+            background-image: url(https://cdn.pixabay.com/photo/2016/12/30/07/55/bedroom-1940168_960_720.jpg);
+        }
+        .img2{
+            background-image: url(https://cdn.pixabay.com/photo/2017/07/08/02/16/house-2483336_1280.jpg)
+        }
+        .img3{
+            background-image: url(https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg)
+        }
+        .img4{
+            background-image: url(https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg)
+        }
+        .img5{
+            background-image: url(https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg)
+        }
+        .img6{
+            background-image:url(https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg)
+        }
+        .img7{
+            background-image: url(https://images.pexels.com/photos/2098691/pexels-photo-2098691.jpeg)
+        }
+        .img8{
+            background-image:url(https://images.pexels.com/photos/164558/pexels-photo-164558.jpeg)
+        }
+        .prop-head{
+            margin: 4px 0px 4px 5px;
+        }
+        .rent{
+            border-radius: 5px;
+            box-sizing: border-box;
+            padding: 3px 5px 3px 5px;
+            background-color: #dc143c;
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 100;
+            margin: 0px;
+            color: #fcf0e7;
+        }
+        .sale{
+            background-color: #ffa500;
+        }
+        .description{
+            width: 85%;
+            margin:45px 22px 0px 22px;
+            padding-top: 30px;
+            border-radius: 8px;
+            text-align: center;
+            background-color:rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+        .button{
+            outline: none;
+            border: none;
+            color: white;
+            font-weight: 600;
+            margin: 0px 0px 10px 0px ;
+            display: inline-block;
+            background-color: #3cb371;
+            border-radius: 5px;
+            padding: 3px 10px 3px 10px;
+        }
+        .place{
+            margin: 8px 0px 8px 0px; 
+        }
+        div>h3{
+            margin: 0px 0px 10px 0px;
+        }
+        .box:hover{
+            box-shadow: 3px 3px 10px 5px rgba(0,0,0,0.3) ;
+        }
+        .button:hover{
+            background-color: green;
+        }
+
+        </style>
+</head>
+<body>
+    <div class="image-container">
+
+    </div>
+    <div>
+        <header id="head">
+            <h1 class="header">Recent Properties</h1>
+            <p class="header-para">Discover how much the latest properties have been sold for.</p>
+        </header>
+        <section id="sect">
+            <div class="box img1">
+                <div class="prop-head"><p class="rent">FOR RENT</p></div>
+                <div class="description">
+                    <h3>176 Kingsberry Anderson</h3>
+                    <p class="place">Rochester, NY 14626</p>
+                    <button class="button">$3000/month</button>
+                </div>
+            </div><div class="box img2">
+                <div class="prop-head"><p class="rent sale">FOR SALE</p></div>
+                <div class="description">
+                    <h3>45 Lianne Dr, Greece Street</h3>
+                    <p class="place">Tasley, VA 23441</p>
+                    <button class="button">$150,000</button>
+                </div>
+            </div><div class="box img3">
+                <div class="prop-head"><p class="rent">FOR RENT</p></div>
+                <div class="description">
+                    <h3>6101 Aqua Ave Apt 603</h3>
+                    <p class="place">Miami Beach, FL 33141</p>
+                    <button class="button">$3000/month</button>
+                </div>
+            </div><div class="box img4">
+                <div class="prop-head"><p class="rent">FOR RENT</p></div>
+                <div class="description">
+                    <h3>339 N Oakhurst Dr Apt 303</h3>
+                    <p class="place">Berverly Hills, CA 90210</p>
+                    <button class="button">$3000/month</button>
+                </div>
+            </div><div class="box img5">
+                <div class="prop-head"><p class="rent sale">FOR SALE</p></div>
+                <div class="description">
+                    <h3>85 Elmwood Dr, Lake View</h3>
+                    <p class="place">Austin, TX 73301</p>
+                    <button class="button">$3000</button>
+                </div>
+            </div><div class="box img6">
+                <div class="prop-head"><p class="rent">FOR RENT</p></div>
+                <div class="description">
+                    <h3>102 Parkside Blvd, Unit 5A</h3>
+                    <p class="place">Denver, CO 80203</p>
+                    <button class="button">$2200/month</button>
+                </div>
+            </div><div class="box img7">
+                <div class="prop-head"><p class="rent sale">FOR SALE</p></div>
+                <div class="description">
+                    <h3>19 Ocean Breeze Ct</h3>
+                    <p class="place">San Diego, CA 92103</p>
+                    <button class="button">$1,777,000</button>
+                </div>
+            </div>
+            <div class="box img8">
+                <div class="prop-head"><p class="rent sale">FOR SALE</p></div>
+                <div class="description">
+                    <h3>711 Sunset Valley Rd</h3>
+                    <p class="place">Las Vegas, NV 89109</p>
+                    <p class="button">$1,250,000</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        h1 {
+            color: gray;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .parent {
+            width: 700px;
+            height: 600px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 30px;
+            padding: 50px 0px;
+        }
+
+        .line {
+            width: 2px;
+            height: 450px;
+            background-color: black;
+            transform-origin: 0px 0px;
+            animation: scroll 2s linear infinite;
+            animation-direction: alternate;
+            border-radius: 10px;
+        }
+
+        @keyframes scroll {
+            from {
+                height: 100%;
+            }
+
+            to {
+                height: 0%;
+            }
+        }
+
+        #l1 {
+            animation-duration: 1.7s;
+        }
+
+        #l2 {
+            animation-duration: 1.6s;
+        }
+
+        #l3 {
+            animation-duration: 1.5s;
+        }
+
+        #l4 {
+            animation-duration: 1.4s;
+        }
+
+        #l5 {
+            animation-duration: 1.3s;
+        }
+
+        #l6 {
+            animation-duration: 1.2s;
+        }
+
+        #l7 {
+            animation-duration: 1.3s;
+        }
+
+        #l8 {
+            animation-duration: 1.4s;
+        }
+
+        #l9 {
+            animation-duration: 1.5s;
+        }
+
+        #l10 {
+            animation-duration: 1.6s;
+        }
+
+        #l11 {
+            animation-duration: 1.7s;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Amplifier Animation </h1>
+    <div class="parent">
+        <div class="line" id="l1"></div>
+        <div class="line" id="l2"></div>
+        <div class="line" id="l3"></div>
+        <div class="line" id="l4"></div>
+        <div class="line" id="l5"></div>
+        <div class="line" id="l6"></div>
+        <div class="line" id="l7"></div>
+        <div class="line" id="l8"></div>
+        <div class="line" id="l9"></div>
+        <div class="line" id="l10"></div>
+        <div class="line" id="l11"></div>
+    </div>
+
+</body>
+
+</html>

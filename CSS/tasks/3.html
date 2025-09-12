@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #3b3185;
+        }
+
+        h1 {
+            font-family: sans-serif;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.125rem;
+            position: relative;
+            margin-bottom: 20px; 
+        }
+
+        h1::before {
+            content: "";
+            position: absolute;
+            width: 180px;
+            height: 8px;
+            background-color: green;
+            bottom: 0;
+            border-radius: 2px;
+        }
+
+        .container {
+            display: flex;
+            width: 1200px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+        }
+
+        .box {
+            height: 250px;
+            width: 250px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+            flex-direction: column;
+            border: 5px solid transparent;
+        }
+
+        .box:hover {
+            border: 5px solid #198754;
+            /* border-radius: 12px; */
+        }
+
+        h3 {
+            font-size: 22px;
+            color: #3b3185;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Solutions</h1>
+    <div class="container">
+        <div class="box" id="boxes"><img src="https://www.height8tech.com/img/subscriber-management-ico-2.webp" alt="">
+            <h3>Subscriber Management</h3>
+        </div>
+        <div class="box" id="boxes"><img src="https://www.height8tech.com/img/voucher-management-ico.webp" alt="">
+            <h3>Voucher Management</h3>
+        </div>
+        <div class="box" id="boxes"><img src="https://www.height8tech.com/img/billing-mangement-ico.webp" alt="">
+            <h3>Billing Management</h3>
+        </div>
+        <div class="box" id="boxes"><img src="https://www.height8tech.com/img/rating-charging-ico.webp" alt="">
+            <h3>Rating & Charging</h3>
+        </div>
+        <div class="box" id="boxes"><img src="https://www.height8tech.com/img/payment-management-ico.webp" alt="">
+            <h3>Payment Management</h3>
+        </div>
+        <div class="box" id="boxes"><img src="https://www.height8tech.com/img/resource-management-ico.webp" alt="">
+            <h3>Resource Management</h3>
+        </div>
+        <div class="box" id="boxes"><img src="https://www.height8tech.com/img/location-management-ico.webp" alt="">
+            <h3>Location Management</h3>
+        </div>
+        <div class="box" id="boxes"><img src="https://www.height8tech.com/img/radius-ico.webp" alt="">
+            <h3>Dunning & Broadcast</h3>
+        </div>
+    </div>
+</body>
+
+</html>

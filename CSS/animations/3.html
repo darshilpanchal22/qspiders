@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rainbow {
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            margin: 50px auto;
+            background-image: conic-gradient(red 0deg 0deg);
+            animation: rainbow-cylce 10s linear infinite;
+        }
+
+        @keyframes rainbow-cycle {
+            0% {
+                background-color: conic-gradient(red 0deg 50deg);
+            }
+
+            15% {
+                background-color: conic-gradient(red 0deg 50deg, orange 50deg 100deg);
+            }
+
+            30% {
+                background-color: conic-gradient(red 0deg 50deg orange 50deg 100deg,yellow 100deg 150deg );
+            }
+
+            45% {
+                background-color: conic-gradient(red 0deg 50deg, orange 50deg 100deg,yellow 100deg 150deg ,green 150deg 200deg);
+            }
+
+            60% {
+                background-color: conic-gradient(red 0deg 50deg, orange 50deg 100deg,yellow 100deg 150deg ,green 150deg 200deg, blue 200deg 250deg);
+            }
+
+            75% {
+                background-color: conic-gradient(red 0deg 50deg, orange 50deg 100deg,yellow 100deg 150deg ,green 150deg 200deg, blue 200deg 250deg, indigo 250deg 300deg);
+            }
+
+            90% {
+                background-color: conic-gradient(red 0deg 50deg,  orange 50deg 100deg,yellow 100deg 150deg ,green 150deg 200deg, blue 200deg 250deg, indigo 250deg 300deg,purple 300deg 360deg);
+            }
+
+            100% {
+                background-color: conic-gradient(red 0deg 50deg,  orange 50deg 100deg,yellow 100deg 150deg ,green 150deg 200deg, blue 200deg 250deg, indigo 250deg 300deg,purple 300deg 360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rainbow"></div>
+</body>
+
+</html>

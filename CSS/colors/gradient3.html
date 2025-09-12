@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .grad {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 300px;
+            margin: 50px auto;
+        }
+
+        #grad1 {
+            background-image: conic-gradient(red 0deg, blue 45deg);
+        }
+
+        #grad3 {
+            background-image: conic-gradient(red 0deg 60deg, blue 60deg 120deg, green 120deg 180deg, yellow 180deg 240deg, violet 240deg 300deg, purple 300deg);
+        }
+
+        #grad2 {
+            background-image: conic-gradient(red 0deg 120deg, blue 120deg, green 120deg);
+        }
+
+        #grad4 {
+            background-image: conic-gradient(red 0deg 45deg, blue 45deg 315deg, red 315deg);
+        }
+
+        #grad5 {
+            background-image: conic-gradient(red 0deg 30deg, blue 30deg 60deg, yellow 60deg 90deg);
+        }
+        #grad6{
+            background-image: repeating-conic-gradient(grey 0deg 10deg,white 10deg 20deg, black 20deg 30deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>conic gradient</h1>
+    <div class="container">
+        <div class="grad" id="grad1">gradient-1</div>
+        <div class="grad" id="grad2">gradient-2</div>
+        <div class="grad" id="grad3">gradient-3</div>
+        <div class="grad" id="grad4">gradient-4</div>
+        <div class="grad" id="grad5">gradient-5</div>
+        <div class="grad" id="grad6">gradient-6</div>
+</body>
+
+</html>

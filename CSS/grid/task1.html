@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-color: #ddd;
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+
+        .box {
+            background-color:blue;
+            color: black;
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid wheat;
+        }
+
+        #header {
+            grid-column: 1 / 4;
+        }
+
+        #aside {
+            grid-column: 1 / 2;
+            grid-row: 2 / 4;
+        }
+
+        #main {
+            grid-column: 2 / 4;
+        }
+
+        #c1 {
+            grid-column: 2 / 2;
+            grid-template-columns: 1fr;
+        }
+
+        #article {
+            grid-column: 3 / 4;
+            grid-template-columns: 2fr;
+        }
+
+        #footer {
+            grid-column: 1 / 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="header">Header</div>
+        <div class="box" id="aside">Aside</div>
+        <div class="box" id="main">Main</div>
+        <div class="box" id="c1">C - 1</div>
+        <div class="box" id="article">C - 2</div>
+        <div class="box" id="footer">Footer</div>
+    </div>
+</body>
+
+</html>

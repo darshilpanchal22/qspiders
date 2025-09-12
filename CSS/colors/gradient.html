@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            display: flex;
+            gap: 5px;
+            text-align: center;
+            line-height: 150px;
+        }
+
+        .grad {
+            border: 2px solid gray;
+            height: 150px;
+            width: 130px;
+
+        }
+
+        #grad1 {
+            background-image: linear-gradient(to bottom, violet, purple);
+        }
+
+        #grad2 {
+            background-image: linear-gradient(to right,red,orange);
+        }
+
+        #grad3 {
+            background-image: linear-gradient(to left ,orange ,green, yellow);
+        }
+
+        #grad4 {
+            background-image: linear-gradient(to bottom,orange, white,green);
+        }
+
+        #grad5 {
+            background-image: linear-gradient(45deg, salmon,rebeccapurple);
+        }
+
+        #grad6 {
+            background-image: linear-gradient(orange 33%, white 33%,66%, green 66%);
+        }
+
+        #grad7 {
+            background-image: linear-gradient(to left top, violet, purple);
+        }
+
+        #grad8 {
+            background-image: linear-gradient(to right bottom, violet, pink);
+        }
+
+        #grad9 {
+            background-image: linear-gradient(to top right, black,grey );
+        }
+
+        #grad10 {
+            background-image: linear-gradient(to  left bottom, violet, purple);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>linear gradient</h1>
+    <div class="container">
+        <div class="grad" id="grad1">gradient-1</div>
+        <div class="grad" id="grad2">gradient-2</div>
+        <div class="grad" id="grad3">gradient-3</div>
+        <div class="grad" id="grad4">gradient-4</div>
+        <div class="grad" id="grad5">gradient-5</div>
+        <div class="grad" id="grad6">gradient-6</div>
+        <div class="grad" id="grad7">gradient-7</div>
+        <div class="grad" id="grad8">gradient-8</div>
+        <div class="grad" id="grad9">gradient-9</div>
+        <div class="grad" id="grad10">gradient-10</div>
+    </div>
+</body>
+
+</html>

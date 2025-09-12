@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 600px;
+            height: 450px;
+            border: 2px solid black;
+margin:50px auto;
+display: flex;
+justify-content: center;
+align-items: end;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: teal;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            border-radius: 50%;
+            animation: jump 2s linear infinite;
+        }
+        #box1{
+            animation-direction: normal;
+        }
+        #box2{
+            animation-direction: reverse;
+        }
+        #box{
+            animation-direction:alternate ;
+        }
+        #box4{
+            animation-direction: alternate-reverse;
+        }
+        @keyframes jump {
+            from{
+                transform: translateY(0px);
+            }
+            to{
+                transform: translateY(-350px);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

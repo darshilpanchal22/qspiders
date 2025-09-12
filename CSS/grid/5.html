@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .parent {
+            width: 100%;
+            height: 100vh;
+            border: 2px solid yellow;
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: repeat(4, auto);
+            grid-template-areas: "header header header"
+                "main main  side"
+                "main main side"
+                "footer footer footer";
+        }
+        .box{
+            padding: 20px;
+            border: 2px solid red;
+            background-color:blueviolet;
+            color: white;
+        }
+        #box1{
+            grid-area: header;
+        }
+        #box2{
+            grid-area: main;
+        }
+        #box3{
+            grid-area: side;
+        }
+        #box4{
+            grid-area: footer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box" id="box1">Header</div>
+        <div class="box" id="box2">Main</div>
+        <div class="box" id="box3">Aside</div>
+        <div class="box" id="box4">Foot</div>
+    </div>
+</body>
+
+</html>

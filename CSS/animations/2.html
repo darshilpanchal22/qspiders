@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rainbow{
+            width: 400px;
+            height: 400px;
+            border: 1px solid green;
+            margin: 50px auto;
+            border-radius: 50%;
+            animation: color-wheel 5s  linear infinite;
+        }
+        @keyframes color-wheel {
+            0%{
+                background-color: violet;
+            }
+            15%{
+background-color: indigo;
+            }
+            30%{
+                background-color: blue;
+            }
+            45%{
+                background-color: green;
+            }
+            60%{
+                background-color: yellow;
+            }
+            75%{
+                background-color: orange;
+            }
+            90%{
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="rainbow"></div>
+</body>
+</html>

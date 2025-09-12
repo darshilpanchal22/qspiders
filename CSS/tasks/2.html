@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        .container {
+            width: 600px;
+            height: 500px;
+            margin: 20px auto;
+
+        }
+
+        .box {
+            height: 200px;
+            width: 250px;
+            border: 2px solid;
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        #box1 {
+            background-color: blueviolet;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 0px;
+            background-image: url(https://images.pexels.com/photos/1544420/pexels-photo-1544420.jpeg);
+            box-sizing: border-box;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #box2 {
+            background-color: rgb(43, 226, 125);
+            border-top-left-radius: 50px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 50px;
+            background-image: url(https://images.pexels.com/photos/277590/pexels-photo-277590.jpeg);
+            box-sizing: border-box;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #box3 {
+            background-color: rgb(181, 32, 39);
+            border-top-left-radius: 50px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 50px;
+            background-image: url(https://images.pexels.com/photos/462205/pexels-photo-462205.jpeg);
+            box-sizing: border-box;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #box4 {
+            background-color: rgb(193, 28, 162);
+            border-top-left-radius: 0px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 0px;
+            background-image: url(https://images.pexels.com/photos/1661570/pexels-photo-1661570.jpeg);
+            box-sizing: border-box;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .circle {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 2px double black;
+            background-color: white;
+            text-align: center;
+            line-height: 100px;
+            position: absolute;
+            left: 46%;
+            top: 33%
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+        <div class="circle">circle</div>
+    </div>
+
+</body>
+
+</html>

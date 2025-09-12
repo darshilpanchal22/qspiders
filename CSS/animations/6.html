@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+            display: flex;
+            justify-content: center;
+            margin: 20px auto;
+            font-size: 25px;
+            animation: colorchange 2s linear; 
+        }
+        .none{
+            animation-fill-mode: none;
+        }  .forward{
+            animation-fill-mode: forwards;
+        }  .backword{
+            animation-fill-mode: backward;
+        }  .both{
+            animation-fill-mode: both;
+        }
+        @keyframes colorchange {
+            from{
+                background-color: salmon;
+            }
+            to{
+                background-color: turquoise;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box none" id="box1" ></div>
+    <div class="box forward" id="box2"></div>
+    <div class="box backword" id="box3" ></div>
+<div class="box both" id="box4"></div>
+</body>
+</html>

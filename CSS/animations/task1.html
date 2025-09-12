@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .orbit {
+        width: 700px;
+        height: 700px;
+        /* border: 1px dashed red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px auto;
+        position: relative;
+        border-radius: 50%;
+        animation: rotate 5s linear infinite;
+      }
+      .earth {
+        width: 400px;
+        height: 400px;
+        background-image: url(https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg?cs=srgb&dl=pexels-pixabay-87651.jpg&fm=jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 115%;
+        border-radius: 50%;
+        position: absolute;
+      }
+      .moon {
+        width: 100px;
+        height: 100px;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW3C3Ty79k_gyPc3OD5oWmoWQk5nXn1bGIYQ&s);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+        position: absolute;
+        background-size: 105%;
+        top: -50px;
+      }
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="orbit">
+      <div class="earth"></div>
+      <div class="moon"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>
+                <h2>Job Application Form</h2>
+            </legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="firstname">First Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="firstname" id="firstname">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lastname">Last Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="lastname" id="lastname">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phoneno">Phone No:</label>
+                    </td>
+                    <td>
+                        <input type="number" name="phoneno" id="phoneno">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dob">DOB:</label>
+                    </td>
+                    <td>
+                        <input type="date" name="dob" id="dob">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Gender:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" id="gender">Male
+                        <input type="radio" name="gender" id="gender">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address">Address:</label>
+                    </td>
+                    <td>
+                        <textarea name="address" id="address"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="city">City:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="city" id="city">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="state">State:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="state" id="state">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pincode">Pincode:</label>
+                    </td>
+                    <td>
+                        <input type="number" name="pincode" id="pincode">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="position">Position Applied For:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="position" list="position">
+                        <datalist id="position">
+                            <option value="uiux">uiux</option>
+                            <option value="Software Engineer">Software Engineer</option>
+                            <option value="Finance">Finance</option>
+                            <option value="BA">BA</option>
+
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="resume">Resume:</label>
+                    </td>
+                    <td>
+                        <input type="file" name="resume" id="resume">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="linkedinurl">Linkedin URL:</label>
+                    </td>
+                    <td>
+                        <input type="url" name="linkedinurl" id="linkedinurl">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Available Start Date:</label>
+                    </td>
+                    <td>
+                        <input type="date">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="expectedsalary">Expected Salary:</label>
+                    </td>
+                    <td>
+                        <input type="number" name="expectedsal" id="expectedsalary">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="relocate">Willing To Relocate:</label>
+                    </td>
+                    <td>
+                        <select name="relocate" id="relocate">
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </td>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <th>
+                            <input type="submit" value="Submit Application">
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

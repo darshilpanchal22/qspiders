@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-color: #ddd;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+
+        .box {
+            background-color: black;
+            color: wheat;
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid white;
+        }
+
+        #box1 {
+           grid-row: 1;
+          grid-column: 4;
+        }
+
+        #box2 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        #box3 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            
+        }
+
+        #box7 {
+            grid-column-start: 4;
+            grid-column-end: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">header</div>
+        <div class="box" id="box2">main content</div>
+        <div class="box" id="box3">aside-1</div>
+        <div class="box" id="box4">aside-2</div>
+        <div class="box" id="box5">c-1</div>
+        <!-- <div class="box" id="box6">c-2</div> -->
+        <div class="box" id="box7">footer</div>
+    </div>
+</body>
+
+</html>

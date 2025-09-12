@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:lightcoral ;
+        }
+        h1 {
+            background-color: blue;
+        }
+
+        .container {  
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            justify-content: center;
+        }
+        .box{
+            height: 150px;
+            width: 150px;
+            border: 2px black;
+           background-color: chocolate;
+           
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .div {
+            background-color: salmon;
+        }
+
+        .para {
+            border: 2px solid green;
+            background-color: yellow;
+        }
+
+        #main {
+            width: 400px;
+            height: 300px;
+            border: 1px solid orangered;
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="head1"> heading 1</h1>
+    <p class="para">paragraph</p>
+    <p class="para">paragraph 2</p>
+   <div class="container">
+     <div class="box" id="box1">content 1</div>
+    <div class="box" id="box2">content 2</div>
+    <div class="box" id="box3">content 3</div>
+    </div>
+    <hr>
+    <section class="container" id="main">main container</section>
+</body>
+
+</html>
