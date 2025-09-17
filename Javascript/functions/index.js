@@ -1,18 +1,14 @@
 console.log("Function in JS");
-<<<<<<< HEAD
 
 //! Function:
 //? A function is a set of instructions to perform a speicifc task is called as function.
 
 //? Syntax:
 
-=======
-
 //! Function:
 //? A function is a set of instructions to perform a speicifc task is called as function.
 
 //? Syntax:
->>>>>>> cb97fb68ee504127224891424cec97667ccd4050
 function identifier() {
     //code
 }
@@ -76,7 +72,6 @@ let demo = function () {
     console.log("This is function as an expression");
 };
 
-<<<<<<< HEAD
 demo();
 
 //! LIFE
@@ -117,6 +112,4 @@ function greet() {
 console.log(greet()) //undefined
 let demoo = greet();
 console.log(demoo); //undefined
-=======
 demo();
->>>>>>> cb97fb68ee504127224891424cec97667ccd4050
