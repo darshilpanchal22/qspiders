@@ -201,3 +201,32 @@ outerfun();
 //? closure will be  created when you are accesing the values from the parent function  or outer function
 
 //? lexical scopre - if you are acessing  the values from outer scope to inner scope that process is called asmlexical scope in js
+function fun1() {
+    console.log("fun1() started ")
+    fun2();
+    console.log("fun1() ended")
+}
+function fun2() {
+    console.log("fun2() started")
+    fun3();
+    console.log("fun2() ended")
+}
+function fun3() {
+    console.log("fun3() started")
+    console.log("fun3() ended")
+}
+fun1();
+
+
+function addd(a) {
+    console.log(a)
+    return function (b) {
+        console.log(a + b)
+        return function (c) {
+            console.log(a + b + c)
+            return a + b + c
+        }
+    }
+}
+
+console.log(addd(2)(3)(5));
