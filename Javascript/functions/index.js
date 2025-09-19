@@ -230,3 +230,39 @@ function addd(a) {
 }
 
 console.log(addd(2)(3)(5));
+
+//! generator function
+//? a generator function it is used to pause and resume the function execution
+//? yield keyword is responsible to pause resume the execution
+//? .next() will return one object (value , done)
+//? if you want to access the value use .next().value
+//? syntax : function
+
+function normalfun() {
+    console.log(1)
+    console.log(2)
+    console.log(3)
+}
+
+normalfun();
+
+function* getValue() {
+    yield 2;
+    yield 3;
+    yield 4;
+    yield 5;
+    // return bakwas
+
+    yield 6;
+}
+let gen = getValue();
+console.log(gen.next().value) //2
+console.log(gen.next().value) //3
+
+console.log("sorry to interupt")
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next())
+console.log(gen.next())
+console.log(gen.next())
+console.log(gen.next())
