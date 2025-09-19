@@ -113,3 +113,91 @@ console.log(greet()) //undefined
 let demoo = greet();
 console.log(demoo); //undefined
 demo();
+
+//? argument object:
+function getnumbers() {
+    // console.log(n1)
+    // console.log(n2)
+    // console.log(n3)
+    // console.log(n4)
+    // console.log(n5)
+    console.log(arguments) // array of arguments
+    console.log(Array.isArray(arguments)) //false
+}
+
+getnumbers(10, 20, 30, 40, 50)
+
+let arr = [1, 2, 3]
+console.log(Array.isArray(arr));
+
+//?'this' keyword inside the function will represent the window object (top most global object)
+function thiskeyword() {
+    console.log(this); //window 
+    // Object -> global Object
+
+}
+thiskeyword();
+
+
+//! arrow function
+//? the arrow function is a shorthand syntax to create the function in js
+//? the arrow function is introduced in es6 concepts in the yes 2015 
+//? syntax () => {}
+//? arrow function dont have their own 'this' keyword so they will inherit from parent scope (lexical scope)
+//? arrow function dont have 'argument' object
+
+let arrrow = () => {
+    console.log("this is arrow function")
+    return "helo i ama arrow"
+}
+arrrow();
+console.log(arrrow());
+
+//! argument object
+let arg = () => {
+    console.log(arguments) //not defined
+}
+
+//arg (10,20)
+
+let thiskey = () => {
+    console.log(this)
+}
+thiskey();
+//! 1. Implicit return
+//? Implicit returns means if there is only one sibgle statement , you can oomit the curly brackets() and return statement.
+//? By default JS engine will add the {} and return statement.
+let add = (a, b) => a + b;
+console.log(add(10, 20));
+
+//! 2. Explicit return
+//? Explicit return means there are multiple statemnets and you are using return keyword manually then we have to use {} mandatory.
+
+let sub = (num1, num2) => {
+    console.log("Substraction Operation:");
+    return num2 - num1;
+};
+
+console.log(sub(10, 20));
+
+//! nested function
+//? a function which is present inside another function is called as nested function
+
+function outerfun() {
+    let outerVar = "john"
+    console.log("outer function invoked")
+
+    //! nested function
+    function innerfun() {
+        console.log("inner function invoked")
+        console.log(outerVar)
+    }
+    innerfun()
+}
+outerfun();
+
+//? closure function will remember the value of the outer function
+//? for exm -> to maintain the data privacy , state management , etc
+//? closure will be  created when you are accesing the values from the parent function  or outer function
+
+//? lexical scopre - if you are acessing  the values from outer scope to inner scope that process is called asmlexical scope in js
