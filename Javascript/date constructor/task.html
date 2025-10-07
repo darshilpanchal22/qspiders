@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Days Calculator</title>
+    <link rel="stylesheet" href="task.css" />
+  </head>
+  <body>
+    <section class="card">
+      <h1>Number of Days Calculator</h1>
+
+      <article>
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" />
+      </article>
+
+      <article>
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" />
+      </article>
+
+      <button onclick="calculateDays()">Calculate Days</button>
+
+      <h2 id="result">Result will appear here</h2>
+    </section>
+
+    <script src="task.js"></script>
+  </body>
+</html>

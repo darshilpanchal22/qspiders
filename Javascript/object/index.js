@@ -114,3 +114,26 @@ console.log(login.password)
 console.log(login["password"])
 console.log(login[7])
 console.log(login["king kholi"])
+
+//! what is method
+//? A simple JavaScript function which is stored inside the property of an object is called a method in JS object
+
+let car = {
+    cName: "audi",
+    cModel: "A50",
+    cPrice: "70lakh",
+
+    // Method 1
+    start: function () {
+        console.log("🚗🚗🚗");
+    },
+
+    // Method 2 (shorthand syntax)
+    stop() {
+        console.log("Car stopped 🚗❌");
+    }
+};
+
+// calling methods
+car.start(); // 🐱‍👤
+car.stop();  // Car stopped 🚗💨

@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Card-style container */
+.card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 22px;
+    color: #222;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+article {
+    margin: 15px 0;
+}
+
+input[type="date"] {
+    background-color: #fff;
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+input[type="date"]:hover,
+input[type="date"]:focus {
+    border-color: green;
+    box-shadow: greenyellow;
+}
+
+button {
+    display: block;
+    margin: 25px auto 15px;
+    background-color: rgb(8, 125, 0);
+    text-transform: capitalize;
+    font-size: 16px;
+    color: white;
+    width: 160px;
+    height: 45px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(78, 123, 7);
+    transform: scale(1.05);
+}
+
+#result {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #111;
+}
