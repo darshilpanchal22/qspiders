@@ -47,6 +47,37 @@ console.log(document.html)
 // ^4) attribute node (2) -> id,class,src,href,alt etc...
 // ^5) document node (9)-> root node
 // ^6)leaf node -> last node present inside the hierarchy.
-//^ that can be anything text or any lement
+//^ that can be anything text or any element
 
+
+//? the direct access to dom elements:
+//& document.link -> anchor tags
+//& document.images -> for images
+//& document.script -> for js scripters
+//& document.stylesheets ->for  stylesheets
+//& document.forms -> for forms
+
+//! document.links
+let htmlCollection = document.links;
+console.log(htmlCollection)
+console.log(Array.isArray(htmlCollection))
+
+//!document.images
+console.log(document.images) //HTMLCollection
+
+//! document.scripts 
+console.log(document.scripts)  //HTMLCollection
+
+//! document.stylesheet
+console.log(document.styleSheets)
+
+//! document.forms
+console.log(document.forms)
+//! indirect access to the HTML elements
+//? parentnode
+//? childnodes - nodelist -collection of different types of nodes
+//? children
+
+let ul = document.getElementById("List")
+console.log(ul.childNodes);
 
