@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch Task</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Stopwatch</h1>
+
+    <section class="timer">
+      <div class="time-container">
+        <div id="hrs" class="time-box"></div>
+        <span class="label">Hours</span>
+      </div>
+
+      <div class="colon">
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="time-container">
+        <div id="min" class="time-box"></div>
+        <span class="label">Minutes</span>
+      </div>
+
+      <div class="colon">
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="time-container">
+        <div id="sec" class="time-box"></div>
+        <span class="label">Seconds</span>
+      </div>
+    </section>
+
+    <section class="controls">
+      <article>
+        <button id="pauseBtn">Pause</button>
+        <button id="startBtn">Start</button>
+        <button id="resetBtn">Reset</button>
+      </article>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>

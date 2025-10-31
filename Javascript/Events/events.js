@@ -9,22 +9,22 @@ console.log("Types of event in js")
 //?6.focus events
 
 //!what is event(e) object:
-// window.addEventListener("click",(e)=>{
-//     console.log(e)//pointer event
-// })
-// document.getElementById("btn").addEventListener("click",(e)=>{
-// console.log(e.currentTarget)
-// console.log(e.target)
-// })
+window.addEventListener("click", (e) => {
+    console.log(e)//pointer event
+})
+document.getElementById("btn").addEventListener("click", (e) => {
+    console.log(e.currentTarget)
+    console.log(e.target)
+})
 
 document.getElementById("myinput").addEventListener("input", (e) => {
     console.log(e.target.value)
 })
 
 //!2.keyboard events:
-// document.getElementById("myinput").addEventListener("keyup",(e)=>{
-//   console.log(e.key)
-// })
+document.getElementById("myinput").addEventListener("keyup", (e) => {
+    console.log(e.key)
+})
 document.getElementById("myinput").addEventListener("keydown", (e) => {
     console.log(e.key)
 })

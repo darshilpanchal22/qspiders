@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom left, #008afd, #68ccff);
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0px;
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+}
+
+.timer {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+    padding: 60px;
+    border-radius: 10px;
+}
+
+.time-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.time-box {
+    padding: 50px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color: #4b5563;
+    font-size: 56px;
+    min-width: 100px;
+    text-align: center;
+}
+
+.label {
+    font-size: 16px;
+    color: #97999a;
+    font-weight: 600;
+}
+
+.colon {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.colon div {
+    width: 8px;
+    height: 8px;
+    background-color: #6b7280;
+    border-radius: 50%;
+}
+
+.controls {
+    width: 40%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 25px;
+}
+
+article {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+button {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+#pauseBtn {
+    background-color: #f43f5e;
+}
+
+#pauseBtn:hover {
+    background-color: #e11d48;
+    transform: scale(1.1);
+}
+
+#startBtn {
+    background-color: #22c55e;
+}
+
+#startBtn:hover {
+    background-color: #16a34a;
+    transform: scale(1.1);
+}
+
+#resetBtn {
+    background-color: #6366f1;
+}
+
+#resetBtn:hover {
+    background-color: #4f46e5;
+    transform: scale(1.1);
+}

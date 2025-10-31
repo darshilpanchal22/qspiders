@@ -1,0 +1,16 @@
+{
+    "employee":[
+          {
+        "id":101,
+        "empname":"darshil",
+        "empage":"21",
+        "empskills":["html", "css", "js","reactjs"],
+        "empaddress":{
+            "state": "gujarat",
+            "city":"ahmedabad",
+            "area":"vastral",
+            "pincode": 382418
+        }
+    }
+    ]
+}
