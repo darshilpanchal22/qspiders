@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Auth Page</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #f2f4f7;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      nav {
+        background: #2c3e50;
+        padding: 15px 0;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+      }
+
+      nav ul li {
+        margin: 0 20px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      nav ul li a:hover {
+        color: #00b894;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 40px;
+        color: #2c3e50;
+      }
+
+      hr {
+        margin: 40px auto;
+        width: 80%;
+        border: 0;
+        border-top: 2px solid #ccc;
+      }
+
+      form {
+        max-width: 400px;
+        margin: 20px auto;
+        background: white;
+        padding: 30px 40px;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      form label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+      }
+
+      form input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+        transition: border-color 0.3s ease;
+      }
+
+      form input:focus {
+        border-color: #00b894;
+      }
+
+      form button {
+        width: 100%;
+        padding: 12px;
+        background: #00b894;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      form button:hover {
+        background: #019170;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#registerHead">Register</a></li>
+        <li><a href="#loginHead">Login</a></li>
+      </ul>
+    </nav>
+
+    <h1>Home Page</h1>
+
+    <hr />
+
+    <h1 id="registerHead">Register Page</h1>
+    <form id="registerForm">
+      <label>Username</label>
+      <input type="text" placeholder="Enter username" id="username" />
+      <label>Password</label>
+      <input type="password" placeholder="Enter password" id="password" />
+      <label>Confirm Password</label>
+      <input
+        type="password"
+        placeholder="Confirm password"
+        id="confirmPassword"
+      />
+      <button type="submit">Register</button>
+    </form>
+
+    <hr />
+
+    <h1 id="loginHead">Login Page</h1>
+    <form id="loginForm">
+      <label>Username</label>
+      <input type="text" placeholder="Enter username" id="userlogin" />
+      <label>Password</label>
+      <input type="password" placeholder="Enter password" id="userpassword" />
+      <button type="submit">Login</button>
+    </form>
+    <script src="./task.js"></script>
+  </body>
+</html>
