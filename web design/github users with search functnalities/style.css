@@ -10,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 12px 25px;
-    background: #111;
+    background: black;
     color: #fff;
 }
 
@@ -57,6 +57,10 @@
     border-radius: 7px;
 }
 
+#green {
+    color: white;
+    background-color: blueviolet;
+}
 
 
 
@@ -124,7 +128,7 @@
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    line-clamp: 3;
+    line-clamp: 1;
 }
 
 .product-card__price-row {
@@ -140,7 +144,7 @@
 }
 
 .product-card__btn {
-    background-color: var(--primary-color);
+    background-color: black;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -152,5 +156,5 @@
 }
 
 .product-card__btn:hover {
-    background-color: #C71729;
+    background-color: rgb(255, 80, 80);
 }

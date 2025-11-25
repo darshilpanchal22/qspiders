@@ -6,6 +6,7 @@ async function getUser() {
     productData = data;
     console.log(productData)
     listData(productData);
+    filterData()
 }
 const container = document.getElementById("output");
 
@@ -31,7 +32,20 @@ function listData(products) {
     container.innerHTML = productsData
 }
 
+function filterData() {
+    let input = document.getElementById("search");
+    input.addEventListener("input", (e) => {
+        let value = e.target.value.toLowerCase()
+        let filteredProducts = productData.filter((prod) => {
+            return prod.category.replaceAll("'", "").toLowerCase().includes(value)
+        })
+        listData(filteredProducts)
+    })
+}
+
 
 
 
 getUser();
+
+

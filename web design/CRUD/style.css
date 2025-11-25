@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1:hover {
+    color: orangered;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 12px 25px;
+    background: black;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    font-family: cursive;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.nav-links a:hover {
+    color: orangered;
+}
+
+#login {
+    color: white;
+    background-color: blue;
+    font-size: 15px;
+    border: none;
+    border-radius: 5%;
+    padding: 8px;
+    text-decoration: none;
+}
+
+#login:hover {
+    padding: 10px;
+    font-size: 15px;
+}
+
+#newuser {
+    color: white;
+    background-color: brown;
+    font-size: 15px;
+    border: none;
+    border-radius: 5%;
+    padding: 8px;
+    text-decoration: none;
+}
+
+#newuser:hover {
+    padding: 10px;
+    font-size: 15px;
+}
