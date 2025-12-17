@@ -1,0 +1,40 @@
+it is container which use to store the properties and funcnalities of a real time entity 
+object = it is copy or instance of class   
+syntax and class creation 
+class cname:
+      -properties/functionalities
+objname=Cname()
+here cname that is should start with 
+there are 2 type of class
+in-build class
+user-defined class
+
+1 in-built class
+
+all the data types are in built class because they are predefined by the developers
+
+2 user defined class
+the class which is created by the user based on recruitement of user is called as user defined class
+
+ specific = the properties or functtionalities which will be created outside the class and which will be different for each and every object ar called as specific state  
+object members are created after  creation objects   
+
+properties of class
+class Cname:
+      property1= value1
+      property2= value2
+
+      accesing properties of class
+
+= modification of class 
+using class  Cname.propertyname=new value1
+using object propertyname.name
+
+object are dependents on class / objects are copy of class 
+modification with respect ot objects
+
+modification done with respect to object will affect only for that particular object the class other objects will be uneffected
+ class are not depended on objects                    
+ the properties or functionalities are storing inside the class are called as states
+ types of states
+  generic states = the properties or functionalities which will be declared inside the class and common  each  and every object are called as generic states
