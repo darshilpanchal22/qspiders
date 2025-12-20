@@ -2,7 +2,9 @@ import React from "react";
 
 const Card = ({ className }) => {
   return (
-    <div className={`border text-red-900  bg-blue-400 ${className}`}>
+    <div
+      className={`border text-red-900 w-40  pb-10 mb-5 mt-2  bg-blue-400 ${className}`}
+    >
       <img
         src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
         alt=""

@@ -1,12 +1,13 @@
 import React from "react";
 import Card from "./components/Card";
+import Projectwithprops from "./components/Projectwithprops";
 
 const App = () => {
   return (
     <>
-      <Card />
-      <Card />
-      <Card className="border border-black mt-10" />
+      {/* <Card /> */}
+      {/* <Card className="border border-black mt-10" /> */}
+      <Projectwithprops />
     </>
   );
 };
