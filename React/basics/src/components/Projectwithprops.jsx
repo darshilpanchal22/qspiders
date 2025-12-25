@@ -20,7 +20,7 @@ const Card = (props) => {
       <div className="bottom">
         <div>
           <h3>{props.pay}</h3>
-          <p>Mumbai, India</p>
+          <h4>mumbai , india</h4>
         </div>
         <button>Apply Now</button>
       </div>
