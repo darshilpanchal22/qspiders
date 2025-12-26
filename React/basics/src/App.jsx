@@ -1,4 +1,6 @@
 import Card from "./components/Projectwithprops";
+import UIdesign from "./components/UIdesign";
+
 
 const App = () => {
 
@@ -107,13 +109,15 @@ const App = () => {
 
 
   return (
+
     <div className='parent'>
-      {/* <Carddesign /> */}
-      {jobOpenings.map(function (elem, index) {
+      {/* {jobOpenings.map(function (elem, index) {
         return <div key={index}>
-          {/* <Card company={elem.companyName} datePosted={elem.datePosted} post={elem.post} tag1={elem.tag1} brandLogo={elem.brandLogo} pay={elem.pay} tag2={elem.tag2} location={elem.location} /> */}
+          <Card company={elem.companyName} datePosted={elem.datePosted} post={elem.post} tag1={elem.tag1} brandLogo={elem.brandLogo} pay={elem.pay} tag2={elem.tag2} location={elem.location} />
+          <UIdesign />
         </div>
-      })}
+      })} */}
+      <UIdesign />
     </div>
 
   )
