@@ -2,7 +2,7 @@ import React from 'react'
 
 const Uidesign2 = () => {
     return (
-        <div>Uidesign2 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iusto, unde dolor explicabo modi similique sunt nostrum corrupti sequi cupiditate repudiandae rerum quidem veritatis nam ea dolorem ab quas magnam.</p></div>
+        <div className='h-full w-full bg-red-900'>Uidesign2 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores expedita molestiae ratione quia repudiandae in voluptatibus mollitia tempora quos blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iusto, unde dolor explicabo modi similique sunt nostrum corrupti sequi cupiditate repudiandae rerum quidem veritatis nam ea dolorem ab quas magnam.</p></div>
     )
 }
 
