@@ -1,12 +1,14 @@
 import React from 'react'
 
 const App = () => {
-  function btnclick() {
-    console.log('btn click')
+  function inputchange(val) {
+    console.log(val)
   }
   return (
-    <div><h1>heloo</h1>
-      <button onClick={btnclick}>click me</button>
+    <div>
+      <input onChange={function (elem) {
+        inputchange(elem.target.value)
+      }} type='text' placeholder='enter name' />
     </div>
   )
 }
