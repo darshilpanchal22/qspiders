@@ -5,12 +5,12 @@ const App = () => {
     console.log(val)
   }
   return (
-    // <div>
-    //   <input onChange={function (elem) {
-    //     inputchange(elem.target.value)
-    //   }} type='text' placeholder='enter name' />
-    // </div>
-    <div className='box'></div>
+    <div>
+      <input onChange={function (elem) {
+        inputchange(elem.target.value)
+      }} type='text' placeholder='enter name' />
+    </div>
+
   )
 }
 
