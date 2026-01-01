@@ -3,6 +3,26 @@
     color: white;
 }
 
-#box {
+.box {
     background-color: red;
+    height: 50vh;
+    width: 50vh;
+}
+
+.page1 {
+    width: 50vw;
+    height: 50vw;
+    background-color: aqua;
+}
+
+.page2 {
+    width: 50vw;
+    height: 50vw;
+    background-color: blue;
+}
+
+.page3 {
+    width: 50vw;
+    height: 50vw;
+    background-color: #dadada;
 }
