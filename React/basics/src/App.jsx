@@ -120,7 +120,7 @@ const App = () => {
     //   <UIdesign />
     // </div>
     <div className="parent">
-      {/* {jobOpenings.map((elem, index) => (
+      {jobOpenings.map((elem, index) => (
         <Card
           key={index}
           company={elem.companyName}
@@ -132,7 +132,7 @@ const App = () => {
           location={elem.location}
           brandLogo={elem.brandLogo}
         />
-      ))} */}
+      ))}
 
       <UIdesign />
       <Uidesign2 />

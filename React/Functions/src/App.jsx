@@ -10,7 +10,7 @@ const App = () => {
         inputchange(elem.target.value)
       }} type='text' placeholder='enter name' />
     </div>
-
+ 
   )
 }
 
