@@ -1,6 +1,6 @@
-import Usernameage from "./Usernameage";
-import Displaypara from "./Displaypara";
-import Count from "./Count";
+import Usernameage from "./components/Usernameage";
+import Displaypara from "./components/Displaypara";
+import Count from "./components/Count";
 function App() {
 
   return (
