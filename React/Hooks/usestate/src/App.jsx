@@ -7,9 +7,9 @@ function App() {
     <>
       <div>
       </div>
-      {/* <Count /> */}
-      {/* <Usernameage /> */}
-      {/* <Displaypara /> */}
+      <Count />
+      <Usernameage />
+      <Displaypara />
     </>
   );
 }
