@@ -2,6 +2,8 @@ import Usernameage from "./components/Usernameage";
 import Displaypara from "./components/Displaypara";
 import Count from "./components/Count";
 import Usestate from "./components/Usestate";
+import Usestate1 from "./components/Usestate1";
+
 
 function App() {
 
@@ -12,7 +14,8 @@ function App() {
       {/* <Count />
       <Usernameage />
       <Displaypara /> */}
-      <Usestate />
+      {/* <Usestate />S */}
+      <Usestate1 />
     </>
   );
 }
