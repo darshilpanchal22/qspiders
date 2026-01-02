@@ -13,7 +13,7 @@ const Usernameage = () => {
     <div>
       <h1>{username}</h1>
       <h1>{age}</h1>
-      <button 
+      <button
         onClick={() => {
           updateUsername();
         }}
