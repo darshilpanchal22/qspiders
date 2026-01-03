@@ -21,7 +21,7 @@ import { useState } from 'react'
 
 
 const Usestate1 = () => {
-    const [num, Setnum] = useState([10, 20, 30, 40])
+    const [num, Setnum] = useState([10, 20, 30, 40], { user: "rishi" })
     const btnclick = () => {
 
     }
