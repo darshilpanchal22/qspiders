@@ -23,10 +23,7 @@ import { useState } from 'react'
 const Usestate1 = () => {
     const [num, Setnum] = useState([10, 20, 30, 40])
     const btnclick = () => {
-        const newNum = [...num]
-        newNum.push(99)
-        // console.log(newNum)
-        Setnum(newNum)
+
     }
     return (
         <div>
