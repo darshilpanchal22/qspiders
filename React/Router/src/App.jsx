@@ -1,55 +1,18 @@
-import "./App.css";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import Login from "./components/Login";
-import About from "./components/About";
-import User from "./components/User";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Login from "./pages/Login";
 
-function App() {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: (
-        <>
-          <Navbar />
-          <Home />
-        </>
-      ),
-    },
-    {
-      path: "/login",
-      element: (
-        <>
-          <Navbar />
-          <Login />
-        </>
-      ),
-    },
-    {
-      path: "/about",
-      element: (
-        <>
-          <Navbar />
-          <About />
-        </>
-      ),
-    },
-    {
-      path: "/user/",
-      element: (
-        <>
-          <Navbar />
-          <User />
-        </>
-      ),
-    },
-  ]);
+const App = () => {
   return (
-    <>
-      <RouterProvider router={router} />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

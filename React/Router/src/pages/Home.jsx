@@ -1,9 +1,9 @@
 import React from 'react'
 
 const Home = () => {
-  return (
-    <div> i am a Home</div>
-  )
+    return (
+        <div>Hhome</div>
+    )
 }
 
 export default Home
