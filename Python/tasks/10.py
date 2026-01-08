@@ -20,4 +20,18 @@ def is_prime(n):
 # print(is_prime(11))  # True
 # print(is_prime(15))  # False
 
-#
+#factorial num
+# n=100
+# sum=0
+# for i in str(n):
+#     num=int(i)
+#     fact=1
+#     for j in range(num,0,-1):
+#         fact=fact*j
+#     sum+=fact
+# if sum==n:
+#    print('strong num')
+# else:
+#     print('not strong')
+
+
