@@ -26,7 +26,13 @@ const fs = require('fs')
 // })
 
 //? for delete file
-fs.unlink("hey.txt", function(err){
+// fs.unlink("hey.txt", function(err){
+//     if (err) console.log(err)
+//         else console.log("deleted")
+// })
+
+//! create folders
+fs.mkdir("Lolo", function (err) {
     if (err) console.log(err)
-        else console.log("deleted")
+    else console.log("created folder")
 })
