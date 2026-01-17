@@ -4,7 +4,7 @@ import Count from "./components/Count";
 import Usestate from "./components/Usestate";
 import Usestate1 from "./components/Usestate1";
 import Practice1 from "./components/Practice1";
-
+import "./app.css"
 
 function App() {
 
