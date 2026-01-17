@@ -3,11 +3,10 @@ import React, { useState } from 'react'
 const Usestate = () => {
     const [num, setNum] = useState(20)
     const [username, setUsername] = useState("darshil")
-    const [users, setUsers] = useState("second")
+    const [users,] = useState("second")
     function changenum() {
         setNum(33)
         setUsername("panchal")
-        setUsers("set")
     }
     return (
         <div>

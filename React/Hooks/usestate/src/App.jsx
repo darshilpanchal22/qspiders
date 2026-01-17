@@ -14,10 +14,11 @@ function App() {
       {/* <Count />
       <Usernameage />
       <Displaypara /> */}
-      {/* <Usestate />S */}
+      <Usestate />
       <Usestate1 />
     </>
   );
 }
 
 export default App;
+
