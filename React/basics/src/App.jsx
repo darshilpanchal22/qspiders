@@ -130,6 +130,7 @@ const App = () => {
         <p>trying to be consistent in this cource</p>
         <p>will  complete this cource soon</p>
       </Props1 >
+
       <Props1>
         helo je
       </Props1>
