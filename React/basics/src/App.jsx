@@ -1,6 +1,7 @@
 import Card from "./components/Projectwithprops";
 import Props from "./components/Props";
 import "./App.css"
+import Props1 from "./components/Props1";
 
 
 const App = () => {
@@ -118,11 +119,21 @@ const App = () => {
     //     </div>
     //   })}
     // </div>
-    <>
-      <Props name="darshil" desc="desc1" />
-      <Props name="darshil panchal" desc="desc2" />
-      <Props name="darsheel" desc="desc3" />
-    </>
+
+    //  <Props name="darshil" desc="desc1" />
+    // <Props name="darshil panchal" desc="desc2" />
+    // <Props name="darsheel" desc="desc3" /> 
+
+    <div>
+      <Props1 name="love babbar">
+        <h1> best web dev cource</h1>
+        <p>trying to be consistent in this cource</p>
+        <p>will  complete this cource soon</p>
+      </Props1 >
+      <Props1>
+        helo je
+      </Props1>
+    </div>
   )
 }
 
