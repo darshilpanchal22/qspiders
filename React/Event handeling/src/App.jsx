@@ -20,7 +20,7 @@ const App = () => {
   return (
 
     <div>
-      <button onClick={alert("")}></button>
+      <button onClick={() => alert("btn is clicked")}>click me </button>
       {/* <form action="" onSubmit={handlesubmit}>
         <input type="text" onChange={handleinputchange} />
         <button type='submit'>submit</button>
