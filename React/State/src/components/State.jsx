@@ -1,8 +1,12 @@
 import React from 'react'
 
-const State = () => {
+const State = (props) => {
     return (
-        <div>State</div>
+        <div>
+
+            <input type="text" onChange={(e) => props.setName(e.target.value)} />
+            <p>name state var ki value inside card: {props.name}</p>
+        </div>
     )
 }
 

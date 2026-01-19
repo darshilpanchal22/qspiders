@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import State from './components/State'
 
 const App = () => {
+  const [name, setName] = useState("")
   return (
     <div>
-      <State />
+      <State name={name} setName={setName} />
+      <p> i am inside parent component :{name}</p>
     </div>
   )
 }
