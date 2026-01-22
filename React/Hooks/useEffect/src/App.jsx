@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 
 const App = () => {
   const [count, setCount] = useState(0)
-  const [total, setTotal] = useState(1)
+  const [total, setTotal] = useState(0)
   //  first = side effect function
   // second  = clean-up  function 
   // third = comma separeted dep list
@@ -46,7 +46,7 @@ const App = () => {
     setTotal(total + 1)
   }
   useEffect(() => {
-    if (count === 5) {
+    if (count > 5) {
       document.title = "helooo react";
     }
   }, [count]);
