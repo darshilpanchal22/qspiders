@@ -30,12 +30,12 @@ const App = () => {
   // }, [])
 
   //variation 5 = lets add cleanup function
-  useEffect(() => {
-    alert("count updated")
-    return () => {
-      alert("cleanup function called")
-    }
-  }, [count])
+  // useEffect(() => {
+  //   alert("count updated")
+  //   return () => {
+  //     alert("cleanup function called")
+  //   }
+  // }, [count])
 
   function handleClick() {
     setCount(count + 1)
@@ -45,6 +45,11 @@ const App = () => {
   function handleTotalClick() {
     setTotal(total + 1)
   }
+  useEffect(() => {
+    if (count === 5) {
+      document.title = "helooo react";
+    }
+  }, [count]);
 
   return (
     <div>
