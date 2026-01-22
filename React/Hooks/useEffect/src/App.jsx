@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react'
+import Practice1 from './components/Practice1'
 
 const App = () => {
   const [count, setCount] = useState(0)
@@ -52,8 +53,7 @@ const App = () => {
   }, [count]);
 
   return (
-    <div>
-
+    <>
       <button onClick={handleClick}>Increase Count & Total</button>
       <br /><br />
 
@@ -62,7 +62,8 @@ const App = () => {
 
       <p>Count: {count}</p>
       <p>Total: {total}</p>
-    </div>
+      <Practice1 />
+    </>
   )
 }
 
