@@ -3,7 +3,6 @@ import Props from "./components/Props";
 import "./App.css"
 import Props1 from "./components/Props1";
 import { useState } from "react";
-import Propsdrilling from "./components/Propsdrilling";
 
 
 const App = () => {
@@ -144,9 +143,7 @@ const App = () => {
     //     Click me
     //   </button>
     // </>
-
     <>
-      <Propsdrilling />
     </>
   )
 }

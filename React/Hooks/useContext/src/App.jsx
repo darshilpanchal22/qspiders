@@ -1,10 +1,15 @@
-import React from 'react'
-import Usecontext from './components/Usecontext'
+import React, { createContext } from 'react'
+import Child1 from './components/Child1'
+
 
 const App = () => {
+  //& create context
+  const Usercontext = createContext()
+  //& wral all the child inside a provider
   return (
     <div>
-      <Usecontext />
+      <Child1 />
+
     </div>)
 }
 
