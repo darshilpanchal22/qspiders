@@ -3,14 +3,15 @@ import Props from "./components/Props";
 import "./App.css"
 import Props1 from "./components/Props1";
 import { useState } from "react";
+import Propsdrilling from "./components/Propsdrilling";
 
 
 const App = () => {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
-  function handleClick() {
-    setCount(count + 1)
-  }
+  // function handleClick() {
+  //   setCount(count + 1)
+  // }
 
   // const jobOpenings = [
   //   {
@@ -137,13 +138,16 @@ const App = () => {
     // <p>will  complete this cource soon</p>
     // </Props1  > 
 
-    <>
-      <h1>{count}</h1>
-      <button onClick={handleClick}>
-        Click me
-      </button>
-    </>
+    // <>
+    //   <h1>{count}</h1>
+    //   <button onClick={handleClick}>
+    //     Click me
+    //   </button>
+    // </>
 
+    <>
+      <Propsdrilling />
+    </>
   )
 }
 
