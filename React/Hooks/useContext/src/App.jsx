@@ -1,16 +1,21 @@
-import React, { createContext } from 'react'
+import React, { createContext, useState } from 'react'
 import Child1 from './components/Child1'
 
+// ✅ create context OUTSIDE component
+//& create context
+//& wral all the child inside a provider
+//& pass value
+const Usercontext = createContext()
 
 const App = () => {
-  //& create context
-  const Usercontext = createContext()
-  //& wral all the child inside a provider
-  return (
-    <div>
-      <Child1 />
+  const [user, setUser] = useState({ name: "darshil" })
 
-    </div>)
+  return (
+    <Usercontext.Provider value={user}>
+      <Child1 />
+    </Usercontext.Provider>
+  )
 }
 
 export default App
+export { Usercontext }

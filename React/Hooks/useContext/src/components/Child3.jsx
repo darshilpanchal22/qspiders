@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Usercontext } from '../App'
 
 const Child3 = () => {
+    const user = useContext(Usercontext)
     return (
-        <div>
-            heloo
-        </div>
+        <>
+            data:  {user.name}
+        </>
+
     )
 }
 
