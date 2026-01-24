@@ -1,12 +1,14 @@
 import React, { useContext } from 'react'
-import { Usercontext } from '../App'
+import { Themecontext } from '../App'
 
 const Child3 = () => {
-    const user = useContext(Usercontext)
+
+    const theme = useContext(Themecontext)
     return (
-        <>
-            data:  {user.name}
-        </>
+        <div>
+            {/* data:  {user.name} */}
+            {theme}
+        </div>
 
     )
 }
