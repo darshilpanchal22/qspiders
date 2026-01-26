@@ -6,8 +6,8 @@ const App = () => {
   const {
     register,
     handleSubmit,
-    watch,
-    formState: { errors },
+    // watch,
+    formState: { errors, isSubmitting },
   } = useForm()
 
   async function onSubmit(data) {
@@ -43,7 +43,7 @@ const App = () => {
         <input  {...register("lastname")} />
       </div>
       <br />
-      <input type="submit" />
+      <input type="submit" disabled={isSubmitting} value={isSubmitting ? "submitting" : "submit"} />
     </form>
   )
 }
