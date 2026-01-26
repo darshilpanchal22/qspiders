@@ -9,14 +9,25 @@ const App = () => {
     watch,
     formState: { errors },
   } = useForm()
+
+  async function onSubmit(data) {
+    await new Promise((resolve) => setTimeout(resolve, 2000))
+    console.log("submit the form", data)
+  }
   return (
-    <form onSubmit={handleSubmit((data) => console.log(data))}>
+    <form onSubmit={handleSubmit(onSubmit)}>
       <div>
-        <label >
+        <label  >
           First name
         </label>
-        <input {...register("fisrstname")} />
-      </div> 
+        <input {...register("firstName", {
+          required: "First name is required",
+          minLength: { value: 3, message: "minimum is 3" },
+          maxLength: 7
+        })} />
+        {errors.firstName && (
+          <p style={{ color: "red" }}>{errors.firstName.message}</p>
+        )}      </div>
 
       <div>
         <label >
@@ -31,6 +42,8 @@ const App = () => {
         </label>
         <input  {...register("lastname")} />
       </div>
+      <br />
+      <input type="submit" />
     </form>
   )
 }
