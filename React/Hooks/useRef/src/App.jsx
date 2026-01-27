@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Stopwatch from './components/Stopwatch'
 
 const App = () => {
   const [count, setCount] = useState(0)
@@ -10,6 +11,7 @@ const App = () => {
     count:{count}
     <br />
     <button onClick={handleSubmit}>increment</button>
+    <Stopwatch />
   </>
   )
 }
