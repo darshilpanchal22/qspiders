@@ -1,20 +1,35 @@
-import React, { useState } from 'react'
+import React, { useMemo, useState } from 'react'
 
 const App = () => {
-  const [count, setcount] = useState(0)
+  const [count, setCount] = useState(0)
+  const [input, setInput] = useState(0)
 
-  function Task(num) {
-    console.log("Task")
-    for (let i = 0; i <= 100000000; i++)
-      return num * 2
-  }
-  let doubleValue =
-    Task(4)
+  const doubleValue = useMemo(() => {
+
+    let result = 0
+    for (let i = 0; i <= 100000000; i++) {
+      result = input * 2
+    }
+
+    return result
+  }, [input]) // ✅ only runs when input changes
+
   return (
     <>
-      <button onClick={() => setcount(count + 1)}>increment</button>
-      <div>count{count}</div>
-      <div>double{doubleValue}</div>
+      <h2>useMemo Example</h2>
+
+      <input
+        type="number"
+        value={input}
+        onChange={(e) => setInput(Number(e.target.value))}
+      />
+
+      <p>Double: {doubleValue}</p>
+
+      <hr />
+
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <p>Count: {count}</p>
     </>
   )
 }
