@@ -1,11 +1,13 @@
-import React, { useState } from 'react'
+import React, { useCallback, useState } from 'react'
 import Child from './components/Child'
 
 const App = () => {
   const [count, setCount] = useState(0)
-  function handleclick() {
+
+  const handleclick = useCallback(() => {
     setCount(count + 1)
-  }
+  },
+    [count])
   return (
     <div>
       Count : {count}
