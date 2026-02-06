@@ -11,12 +11,12 @@ const App = () => {
   return (
     <>
       <RouterProvider router={route} />
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/footer" element={<Footer />} />
-      </Routes> */}
+      </Routes>
     </>
   );
 };
