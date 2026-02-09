@@ -20,7 +20,17 @@ const App = () => {
       element: <div>
         <Navbar />
         <About />
-      </div>
+      </div>,
+      // children: [
+      //   {
+      //     path: 'cources',
+      //     element:
+      //   },
+      //   {
+      //     path: 'tests',
+      //     element:
+      //   }
+      // ]
     },
 
     {
