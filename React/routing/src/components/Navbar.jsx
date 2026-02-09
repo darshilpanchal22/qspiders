@@ -1,20 +1,22 @@
-import { Link, NavLink } from "react-router-dom";
-import Logo from "./../assets/react.svg";
+import React from 'react'
+import Home from './Home'
+import Contact from './Contact'
+import About from './About'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
-  return (
-    <div className="flex py-5 px-2 items-center bg-blue-600">
-      <div className="px-20">
-        <img src={Logo} alt="" />
-      </div>
 
-      <nav className="flex items-center mx-auto gap-10 justify-between text-xl text-white">
-        <Link to={"/"}>Home</Link>
-        <Link to={"/about"}>About</Link>
-        <Link to={"/contact"}>Contact</Link>
-      </nav>
-    </div>
-  );
-};
+    return (
+        <nav>
+            <ul>
+                <li> <NavLink to="/" className={({ isActive }) => isActive ? "active-link" : ""}>home</NavLink> </li>
 
-export default Navbar;
+                <li> <NavLink to="/about">about</NavLink> </li>
+
+                <li> <NavLink to="/contact">contact</NavLink> </li>
+            </ul>
+        </nav>
+    )
+}
+
+export default Navbar

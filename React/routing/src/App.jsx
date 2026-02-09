@@ -1,24 +1,42 @@
-import React from "react";
-import { Routes, Route, RouterProvider } from "react-router-dom";
-import Navbar from "./components/navbar";
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import route from "./routes/routes";
+import React from 'react'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Home from './components/Home';
+import Contact from './components/Contact';
+import About from './components/About';
+import Navbar from './components/Navbar';
 
 const App = () => {
-  return (
-    <>
-      <RouterProvider router={route} />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/footer" element={<Footer />} />
-      </Routes>
-    </>
-  );
-};
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <div>
+        <Navbar />
+        <Home />
+      </div>
+    },
 
-export default App;
+    {
+      path: "/about",
+      element: <div>
+        <Navbar />
+        <About />
+      </div>
+    },
+
+    {
+      path: "/contact",
+      element: <div>
+        <Navbar />
+        <Contact />
+      </div>
+    }
+  ]);
+  return (
+
+    <>
+      <RouterProvider router={router} />
+    </>
+  )
+}
+
+export default App
