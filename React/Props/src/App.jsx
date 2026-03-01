@@ -1,16 +1,15 @@
-import Card from "./components/Projectwithprops";
 import Props from "./components/Props";
 import "./App.css"
 import Props1 from "./components/Props1";
 import { useState } from "react";
-
+import Card from "./components/Card";
 
 const App = () => {
-  // const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0);
 
-  // function handleClick() {
-  //   setCount(count + 1)
-  // }
+  function handleClick() {
+    setCount(count + 1)
+  }
 
   // const jobOpenings = [
   //   {
@@ -117,35 +116,44 @@ const App = () => {
 
 
   return (
-
-    // <div className='parent'>
-    //   {jobOpenings.map(function (elem, index) {
-    //     return <div key={index}>
-    //       <Card company={elem.companyName} datePosted={elem.datePosted} post={elem.post} tag1={elem.tag1} brandLogo={elem.brandLogo} pay={elem.pay} tag2={elem.tag2} location={elem.location} />
-    //     </div>
-    //   })}
-    // </div>
-
-    //  <Props name="darshil" desc="desc1" />
-    // <Props name="darshil panchal" desc="desc2" />
-    // <Props name="darsheel" desc="desc3" /> 
-
-
-    //  <Props1 name="love babbar">
-    // <h1> best web dev cource</h1>
-    // <p>trying to be consistent in this cource</p>
-    // <p>will  complete this cource soon</p>
-    // </Props1  > 
-
-    // <>
-    //   <h1>{count}</h1>
-    //   <button onClick={handleClick}>
-    //     Click me
-    //   </button>
-    // </>
     <>
+      {/* 
+    <div className='parent'>
+      {jobOpenings.map(function (elem, index) {
+        return (
+          <div key={index}>
+            <Card
+              company={elem.companyName}
+              datePosted={elem.datePosted}
+              post={elem.post}
+              tag1={elem.tag1}
+              brandLogo={elem.brandLogo}
+              pay={elem.pay}
+              tag2={elem.tag2}
+              location={elem.location}
+            />
+          </div>
+        )
+      })}
+    </div>
+    */}
+
+      {/* <Props name="darshil" desc="desc1" />
+      <Props name="darshil panchal" desc="desc2" />
+      <Props name="darsheel" desc="desc3" />
+
+      <Props1 name="love babbar">
+        <h1>best web dev course</h1>
+        <p>trying to be consistent in this course</p>
+        <p>will complete this course soon</p>
+      </Props1>
+
+      <h1>{count}</h1>
+      <button onClick={handleClick}>Click me</button> */}
+
+      <Card text="download" color="bg-blue-600" />
+      <Card text="know more" color="bg-red-600" />
     </>
   )
 }
-
-export default App
+export default App 

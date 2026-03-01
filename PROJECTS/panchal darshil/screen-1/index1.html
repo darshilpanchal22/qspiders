@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Management App - Taskeye</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="app-container" id="appContainer">
+      <div class="screen task-list-screen active" id="taskListScreen">
+        <div class="status-header">
+          <div class="status-toggle">
+            <div class="status-badge active" id="statusBadge">On Duty</div>
+            <div style="font-size: 12px; opacity: 0.9">Tap to switch</div>
+          </div>
+          <div class="greeting">Task Management</div>
+          <div class="task-stats">
+            <div class="stat-item">
+              <div style="font-size: 18px; font-weight: 700">5</div>
+              <div>Total Tasks</div>
+            </div>
+            <div class="stat-item">
+              <div style="font-size: 18px; font-weight: 700">3</div>
+              <div>Pending</div>
+            </div>
+            <div class="stat-item">
+              <div style="font-size: 18px; font-weight: 700">2</div>
+              <div>Completed</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="task-content">
+          <div class="toolbar">
+            <button class="filter-btn" onclick="showFilterOptions()">
+              <span style="margin-right: 5px">🔍</span> Filter
+            </button>
+            <button class="sort-btn" onclick="showSortOptions()">
+              <span style="margin-right: 5px">↑↓</span> Sort
+            </button>
+          </div>
+
+          <div class="task-card" onclick="openTaskDetail()">
+            <div class="task-header">
+              <div class="task-title">AC Repair - Office Building</div>
+              <span class="priority-badge priority-high">High</span>
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="task-status status-pending">Pending</div>
+            </div>
+            <div class="task-time">
+              <span>🕐</span>
+              <span>09:00 AM - 11:00 AM</span>
+            </div>
+          </div>
+
+          <div class="task-card" onclick="openTaskDetail()">
+            <div class="task-header">
+              <div class="task-title">Plumbing Installation</div>
+              <span class="priority-badge priority-medium">Medium</span>
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="task-status status-completed">Completed</div>
+            </div>
+            <div class="task-time">
+              <span>🕐</span>
+              <span>Completed at 10:30 AM</span>
+            </div>
+          </div>
+
+          <div class="task-card" onclick="openTaskDetail()">
+            <div class="task-header">
+              <div class="task-title">Electrical Wiring Check</div>
+              <span class="priority-badge priority-high">High</span>
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="task-status status-pending">Pending</div>
+            </div>
+            <div class="task-time">
+              <span>🕐</span>
+              <span>02:00 PM - 04:00 PM</span>
+            </div>
+          </div>
+
+          <div class="task-card" onclick="openTaskDetail()">
+            <div class="task-header">
+              <div class="task-title">Appliance Maintenance</div>
+              <span class="priority-badge priority-low">Low</span>
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="task-status status-completed">Completed</div>
+            </div>
+            <div class="task-time">
+              <span>🕐</span>
+              <span>Completed at 12:15 PM</span>
+            </div>
+          </div>
+
+          <div class="task-card" onclick="openTaskDetail()">
+            <div class="task-header">
+              <div class="task-title">Leak Detection & Repair</div>
+              <span class="priority-badge priority-medium">Medium</span>
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="task-status status-pending">Pending</div>
+            </div>
+            <div class="task-time">
+              <span>🕐</span>
+              <span>05:00 PM - 06:30 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="fab" onclick="addNewTask()">+</div>
+      </div>
+
+      <!-- Screen 2: Task Details -->
+      <div class="screen task-detail-screen" id="taskDetailScreen">
+        <div class="header">
+          <div class="back-btn" onclick="backToTaskList()">←</div>
+          <div class="task-title">AC Repair - Office Building</div>
+          <span class="status-badge priority-high">High Priority</span>
+        </div>
+
+        <div class="content">
+          <div class="section">
+            <div class="section-title">📋 Description</div>
+            <div class="description-box">
+              Inspect and repair the central AC unit on the 3rd floor. The
+              system is not cooling properly and requires immediate attention.
+              Please check the refrigerant levels, clean the filters, and ensure
+              all components are functioning correctly.
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="section-title">📍 Location</div>
+            <div class="info-row">
+              <div class="info-icon">📍</div>
+              <div class="info-content">
+                <div class="info-label">Address</div>
+                <div class="info-value">
+                  123 Business Park, Suite 301, New York, NY 10001
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="section-title">👤 Contact Person</div>
+            <div class="contact-card">
+              <div class="contact-row">
+                <span>👤</span>
+                <span style="margin-left: 10px">John Martinez</span>
+              </div>
+              <div class="contact-row">
+                <span>📞</span>
+                <span style="margin-left: 10px">+1 (555) 234-5678</span>
+              </div>
+              <div class="contact-row">
+                <span>✉️</span>
+                <span style="margin-left: 10px">john.martinez@company.com</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="section-title">📎 Attachments</div>
+            <div class="attachment-grid">
+              <div class="attachment-item" onclick="viewAttachment('image')">
+                🖼️<br /><small>Photo</small>
+              </div>
+              <div class="attachment-item" onclick="viewAttachment('doc')">
+                📄<br /><small>Doc</small>
+              </div>
+              <div class="attachment-item" onclick="viewAttachment('voice')">
+                🎤<br /><small>Voice</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="section-title">⏰ Time Schedule</div>
+            <div class="info-row">
+              <div class="info-icon">🕐</div>
+              <div class="info-content">
+                <div class="info-label">Estimated Time</div>
+                <div class="info-value">09:00 AM - 11:00 AM (2 hours)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <button class="btn btn-secondary" onclick="markComplzete()">
+            Mark Complete
+          </button>
+          <button class="btn btn-primary" onclick="startTask()">
+            Start Task
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
